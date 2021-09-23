@@ -1,0 +1,396 @@
+fileFormatVersion: 2
+guid: 96b87ecb2d9f04a669079601e45d6f4c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2211488953127973301
+    second: Evil-Toast-2-Downwards-Movement_0
+  - first:
+      213: 9184597870422554033
+    second: Evil-Toast-2-Downwards-Movement_1
+  - first:
+      213: -6827420672250999285
+    second: Evil-Toast-2-Downwards-Movement_2
+  - first:
+      213: -3135062133478923928
+    second: Evil-Toast-2-Downwards-Movement_3
+  - first:
+      213: 751894059727240209
+    second: Evil-Toast-2-Downwards-Movement_4
+  - first:
+      213: -2404378812595568123
+    second: Evil-Toast-2-Downwards-Movement_5
+  - first:
+      213: 3099697938072631253
+    second: Evil-Toast-2-Downwards-Movement_6
+  - first:
+      213: 6305855675052247925
+    second: Evil-Toast-2-Downwards-Movement_7
+  - first:
+      213: 4800276351741980968
+    second: Evil-Toast-2-Downwards-Movement_8
+  - first:
+      213: -245410431850110837
+    second: Evil-Toast-2-Downwards-Movement_9
+  - first:
+      213: 5677922791616076989
+    second: Evil-Toast-2-Downwards-Movement_10
+  - first:
+      213: 1807440183799134612
+    second: Evil-Toast-2-Downwards-Movement_11
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Evil-Toast-2-Downwards-Movement_0
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 245
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b1b4e36c79c0be10800000000000000
+      internalID: 2211488953127973301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil-Toast-2-Downwards-Movement_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 235
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b5785fd91f367f70800000000000000
+      internalID: 9184597870422554033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil-Toast-2-Downwards-Movement_2
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 240
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e025262112041a0800000000000000
+      internalID: -6827420672250999285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil-Toast-2-Downwards-Movement_3
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 187
+        width: 107
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 861e53199950e74d0800000000000000
+      internalID: -3135062133478923928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil-Toast-2-Downwards-Movement_4
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 187
+        width: 113
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11cb4c2e9a34f6a00800000000000000
+      internalID: 751894059727240209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil-Toast-2-Downwards-Movement_5
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 229
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50204c9753ee1aed0800000000000000
+      internalID: -2404378812595568123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil-Toast-2-Downwards-Movement_6
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 187
+        width: 112
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d774dd0ad6540b20800000000000000
+      internalID: 3099697938072631253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil-Toast-2-Downwards-Movement_7
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 213
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57bce5c9356e28750800000000000000
+      internalID: 6305855675052247925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil-Toast-2-Downwards-Movement_8
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 123
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 821f941b8e10e9240800000000000000
+      internalID: 4800276351741980968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil-Toast-2-Downwards-Movement_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 107
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8026613380289cf0800000000000000
+      internalID: -245410431850110837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil-Toast-2-Downwards-Movement_10
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 107
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbcde5032b80cce40800000000000000
+      internalID: 5677922791616076989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil-Toast-2-Downwards-Movement_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 59
+        width: 112
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4993d1c5541551910800000000000000
+      internalID: 1807440183799134612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: bb37ae8e4ef1c4811aef9765ba28fab5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
