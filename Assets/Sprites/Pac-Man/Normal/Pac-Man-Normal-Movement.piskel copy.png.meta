@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: 32ed3f11ac4f34120bc0f461f61b5ff7
+guid: 0d4d8db83da2240bf8f3a39f79d6e684
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6975590090657649762
-    second: Pac-Man-Sandwich-Guy-Left-Movement.piskel copy_0
+      213: -5936686606812312520
+    second: Pac-Man-Normal-Movement.piskel copy_0
   - first:
-      213: -4381949674091783784
-    second: Pac-Man-Sandwich-Guy-Left-Movement.piskel copy_1
+      213: -4071431850607461814
+    second: Pac-Man-Normal-Movement.piskel copy_1
   - first:
-      213: -8201486958708465926
-    second: Pac-Man-Sandwich-Guy-Left-Movement.piskel copy_2
+      213: -2806471733527682052
+    second: Pac-Man-Normal-Movement.piskel copy_2
   - first:
-      213: -6516537293597240419
-    second: Pac-Man-Sandwich-Guy-Left-Movement.piskel copy_3
+      213: 5897251571250159507
+    second: Pac-Man-Normal-Movement.piskel copy_3
   - first:
-      213: 618147683927761491
-    second: Pac-Man-Sandwich-Guy-Left-Movement.piskel copy_4
+      213: 1629776350283551209
+    second: Pac-Man-Normal-Movement.piskel copy_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -106,7 +106,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pac-Man-Sandwich-Guy-Left-Movement.piskel copy_0
+      name: Pac-Man-Normal-Movement.piskel copy_0
       rect:
         serializedVersion: 2
         x: 11
@@ -120,14 +120,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 264526caa364ec060800000000000000
-      internalID: 6975590090657649762
+      spriteID: 83c022a2cf6ac9da0800000000000000
+      internalID: -5936686606812312520
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pac-Man-Sandwich-Guy-Left-Movement.piskel copy_1
+      name: Pac-Man-Normal-Movement.piskel copy_1
       rect:
         serializedVersion: 2
         x: 139
@@ -141,14 +141,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 899de1cecff2033c0800000000000000
-      internalID: -4381949674091783784
+      spriteID: a4ab451ad4e5f77c0800000000000000
+      internalID: -4071431850607461814
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pac-Man-Sandwich-Guy-Left-Movement.piskel copy_2
+      name: Pac-Man-Normal-Movement.piskel copy_2
       rect:
         serializedVersion: 2
         x: 267
@@ -162,14 +162,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: afede2c70177e2e80800000000000000
-      internalID: -8201486958708465926
+      spriteID: cf368e2e3d86d09d0800000000000000
+      internalID: -2806471733527682052
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pac-Man-Sandwich-Guy-Left-Movement.piskel copy_3
+      name: Pac-Man-Normal-Movement.piskel copy_3
       rect:
         serializedVersion: 2
         x: 11
@@ -183,14 +183,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d931d898bdb9095a0800000000000000
-      internalID: -6516537293597240419
+      spriteID: 39fda7f1f0f37d150800000000000000
+      internalID: 5897251571250159507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pac-Man-Sandwich-Guy-Left-Movement.piskel copy_4
+      name: Pac-Man-Normal-Movement.piskel copy_4
       rect:
         serializedVersion: 2
         x: 139
@@ -204,8 +204,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 352ae3f1b0a149800800000000000000
-      internalID: 618147683927761491
+      spriteID: 9e1dbf5a4f02e9610800000000000000
+      internalID: 1629776350283551209
       vertices: []
       indices: 
       edges: []
@@ -213,7 +213,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 2771cbaaa9ddc4107bc91d0a5d286b0c
+    spriteID: 67567a68d70314634ada7e5798584823
     internalID: 0
     vertices: []
     indices: 
