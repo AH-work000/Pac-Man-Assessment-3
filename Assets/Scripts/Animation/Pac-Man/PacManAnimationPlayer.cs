@@ -94,22 +94,22 @@ public class PacManAnimationPlayer : MonoBehaviour
         // Below code to automatically play the animation
 
             // Play the Right-Movement Animation
-            InvokeRepeating("playRightAnim", 0f, 18f);
+            InvokeRepeating("playRightAnim", 0f, 29f);
 
             // Play the Down-Movement Animation
-            InvokeRepeating("playDownAnim", 3f, 18f);
+            InvokeRepeating("playDownAnim", 6f, 29f);
 
             // Play the Upwards-Movement Animation
-            InvokeRepeating("playUpAnim", 6f, 18f);
+            InvokeRepeating("playUpAnim", 12f, 29f);
 
             // Play the Left-Movement Animation
-            InvokeRepeating("playLeftAnim", 9f, 18f);
+            InvokeRepeating("playLeftAnim", 18f, 29f);
 
             // Play the Death Animation
-            InvokeRepeating("playDeathAnim", 12f, 18f);
+            InvokeRepeating("playDeathAnim", 24f, 29f);
 
             // Exit out of the Animation Cycle
-            InvokeRepeating("playExit", 15f, 18f);
+            InvokeRepeating("playExit", 26f, 29f);
     }
 
     // Helper Methods
