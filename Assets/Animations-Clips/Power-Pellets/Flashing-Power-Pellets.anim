@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PacManMouthAnimUpwardsPosition
+  m_Name: Flashing-Power-Pellets
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,13 +20,9 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -3588574606647069690, guid: 3a90cba1aa51c4b2b88d90b9c79b9d07, type: 3}
-    - time: 0.2
-      value: {fileID: -5699155445771215014, guid: 3a90cba1aa51c4b2b88d90b9c79b9d07, type: 3}
+      value: {fileID: -1805832156448827246, guid: daeb024431b2747cbb902de23eeefba4, type: 3}
     - time: 0.4
-      value: {fileID: 6321343300329209542, guid: 3a90cba1aa51c4b2b88d90b9c79b9d07, type: 3}
-    - time: 0.6
-      value: {fileID: 8240313605861801948, guid: 3a90cba1aa51c4b2b88d90b9c79b9d07, type: 3}
+      value: {fileID: -5290380705752548648, guid: daeb024431b2747cbb902de23eeefba4, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -46,16 +42,14 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -3588574606647069690, guid: 3a90cba1aa51c4b2b88d90b9c79b9d07, type: 3}
-    - {fileID: -5699155445771215014, guid: 3a90cba1aa51c4b2b88d90b9c79b9d07, type: 3}
-    - {fileID: 6321343300329209542, guid: 3a90cba1aa51c4b2b88d90b9c79b9d07, type: 3}
-    - {fileID: 8240313605861801948, guid: 3a90cba1aa51c4b2b88d90b9c79b9d07, type: 3}
+    - {fileID: -1805832156448827246, guid: daeb024431b2747cbb902de23eeefba4, type: 3}
+    - {fileID: -5290380705752548648, guid: daeb024431b2747cbb902de23eeefba4, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.8
+    m_StopTime: 0.6
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
