@@ -414,4 +414,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d01e440aaa3e54408aa208e70e387a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animationController: {fileID: 1901106753}
+  animController: {fileID: 1901106753}
