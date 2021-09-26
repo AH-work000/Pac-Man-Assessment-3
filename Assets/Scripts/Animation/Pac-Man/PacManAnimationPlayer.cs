@@ -78,5 +78,8 @@ public class PacManAnimationPlayer : MonoBehaviour
             }
         }
 
+        // If the "K" Key is pressed then Pac-Man shifts to play its death Animation.
+        if (Input.GetKeyDown(KeyCode.K))
+            animController.SetTrigger("SwitchDeadAmin");
     }
 }
