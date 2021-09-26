@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: 0d4d8db83da2240bf8f3a39f79d6e684
+guid: 0f1f2dd45d98148e19f44e1a2501551f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5936686606812312520
-    second: Pac-Man-Normal-Movement.piskel copy_0
+      213: -728328168287055795
+    second: Pac-Man-Right-Movement_0
   - first:
-      213: -4071431850607461814
-    second: Pac-Man-Normal-Movement.piskel copy_1
+      213: -4864268997997823163
+    second: Pac-Man-Right-Movement_1
   - first:
-      213: -2806471733527682052
-    second: Pac-Man-Normal-Movement.piskel copy_2
+      213: -526998016884020266
+    second: Pac-Man-Right-Movement_2
   - first:
-      213: 5897251571250159507
-    second: Pac-Man-Normal-Movement.piskel copy_3
+      213: 6288001693550838408
+    second: Pac-Man-Right-Movement_3
   - first:
-      213: 1629776350283551209
-    second: Pac-Man-Normal-Movement.piskel copy_4
+      213: 6759914213334111192
+    second: Pac-Man-Right-Movement_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -106,10 +106,10 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pac-Man-Normal-Movement.piskel copy_0
+      name: Pac-Man-Right-Movement_0
       rect:
         serializedVersion: 2
-        x: 11
+        x: 27
         y: 144
         width: 90
         height: 91
@@ -120,17 +120,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83c022a2cf6ac9da0800000000000000
-      internalID: -5936686606812312520
+      spriteID: d40d659c36574e5f0800000000000000
+      internalID: -728328168287055795
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pac-Man-Normal-Movement.piskel copy_1
+      name: Pac-Man-Right-Movement_1
       rect:
         serializedVersion: 2
-        x: 139
+        x: 155
         y: 144
         width: 90
         height: 91
@@ -141,17 +141,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4ab451ad4e5f77c0800000000000000
-      internalID: -4071431850607461814
+      spriteID: 54bf46a4e15ae7cb0800000000000000
+      internalID: -4864268997997823163
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pac-Man-Normal-Movement.piskel copy_2
+      name: Pac-Man-Right-Movement_2
       rect:
         serializedVersion: 2
-        x: 267
+        x: 283
         y: 144
         width: 90
         height: 91
@@ -162,17 +162,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf368e2e3d86d09d0800000000000000
-      internalID: -2806471733527682052
+      spriteID: 6dbea46881abfa8f0800000000000000
+      internalID: -526998016884020266
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pac-Man-Normal-Movement.piskel copy_3
+      name: Pac-Man-Right-Movement_3
       rect:
         serializedVersion: 2
-        x: 11
+        x: 27
         y: 16
         width: 90
         height: 91
@@ -183,17 +183,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39fda7f1f0f37d150800000000000000
-      internalID: 5897251571250159507
+      spriteID: 882072b9938734750800000000000000
+      internalID: 6288001693550838408
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pac-Man-Normal-Movement.piskel copy_4
+      name: Pac-Man-Right-Movement_4
       rect:
         serializedVersion: 2
-        x: 139
+        x: 155
         y: 16
         width: 90
         height: 91
@@ -204,8 +204,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e1dbf5a4f02e9610800000000000000
-      internalID: 1629776350283551209
+      spriteID: 8d3d4e5592a00dd50800000000000000
+      internalID: 6759914213334111192
       vertices: []
       indices: 
       edges: []
@@ -213,7 +213,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 67567a68d70314634ada7e5798584823
+    spriteID: 21b501f9b282c478bacc7d8b851825f3
     internalID: 0
     vertices: []
     indices: 
