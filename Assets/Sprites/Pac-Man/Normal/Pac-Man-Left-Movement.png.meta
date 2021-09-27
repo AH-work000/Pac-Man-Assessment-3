@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 501f240432b474cbfb1ae3f6d77a3651
+guid: 676cb478eca534f77afe68c1bb6a709f
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -109,8 +109,8 @@ TextureImporter:
       name: Pac-Man-Left-Movement_0
       rect:
         serializedVersion: 2
-        x: 27
-        y: 144
+        x: 11
+        y: 149
         width: 90
         height: 91
       alignment: 0
@@ -130,8 +130,8 @@ TextureImporter:
       name: Pac-Man-Left-Movement_1
       rect:
         serializedVersion: 2
-        x: 155
-        y: 144
+        x: 139
+        y: 149
         width: 90
         height: 91
       alignment: 0
@@ -151,8 +151,8 @@ TextureImporter:
       name: Pac-Man-Left-Movement_2
       rect:
         serializedVersion: 2
-        x: 283
-        y: 144
+        x: 267
+        y: 149
         width: 90
         height: 91
       alignment: 0
@@ -172,8 +172,8 @@ TextureImporter:
       name: Pac-Man-Left-Movement_3
       rect:
         serializedVersion: 2
-        x: 27
-        y: 16
+        x: 11
+        y: 21
         width: 90
         height: 91
       alignment: 0
@@ -193,8 +193,8 @@ TextureImporter:
       name: Pac-Man-Left-Movement_4
       rect:
         serializedVersion: 2
-        x: 155
-        y: 16
+        x: 139
+        y: 21
         width: 90
         height: 91
       alignment: 0
@@ -213,7 +213,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 1b20ee395cdd844fd9ea81b6abf88cf9
+    spriteID: 543356c92678c465285f21348912b88e
     internalID: 0
     vertices: []
     indices: 
