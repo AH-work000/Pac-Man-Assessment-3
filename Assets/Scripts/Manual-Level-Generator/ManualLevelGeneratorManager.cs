@@ -15,7 +15,7 @@ public class ManualLevelGeneratorManager : MonoBehaviour
     public Sprite standardPellet;
     public Sprite powerPellet;
     public Sprite junctionPiece;
-    public int levelMapPos;
+    private int levelMapPos;
 
 
     // The 2D Array Layout Map for Level 2
@@ -23,6 +23,10 @@ public class ManualLevelGeneratorManager : MonoBehaviour
     {
         {1,2,2,2,2,2,2,2,2,2,2,2,2,7},
         {2,5,5,5,5,5,5,5,5,5,5,5,5,4},
+        {2,5,3,4,4,3,5,3,4,4,4,3,5,4},
+        {2,6,4,0,0,4,5,4,0,0,0,4,5,4},
+        {2,5,3,4,4,3,5,3,4,4,4,3,5,3},
+        {2,5,5,5,5,5,5,5,5,5,5,5,5,5},
     };
 
     // Private Variables on the total x and y values of the entire levelMap
@@ -69,7 +73,29 @@ public class ManualLevelGeneratorManager : MonoBehaviour
                     // When the elements of the tilesmap matches the 
                     if (i == levelMapPos)
                     {
-                        CreateNewTile(tilemaps[i], xPos, yPos, levelMap[r,0]);
+                        if (i == 5 || i == 6)
+                        {
+                            CreateNewSquareTile(tilemaps[i], xPos, yPos); 
+                        }
+
+
+
+
+
+                        if (levelMapPos == levelMap[r,0] && levelMapPos != levelMap[0,col])
+                        {
+                            Vector3 rotationPos = new Vector3(0, 0, 90f);
+                            CreateNewTileWithRotate(tilemaps[i], xPos, yPos, rotationPos);
+                        }
+                        else if (i == 5 || i == 6)
+                        {
+                            CreateNewSquareTile(tilemaps[i], xPos, yPos); 
+                        }
+                        else 
+                        {
+                            CreateNewEdgeTile(tilemaps[i], xPos, yPos);
+                        }
+                            
 
 
                         if (xPos <= 12.0)
@@ -94,19 +120,44 @@ public class ManualLevelGeneratorManager : MonoBehaviour
     }
 
 
-    private void CreateNewTile(Sprite selectSprite, float xPos, float yPos, int leftEdgePos)
+
+    private void CreateNewSquareTile(Sprite selectSprite, float xPos, float yPos)
+    {
+        GameObject gameObject = new GameObject("X-Position: " + xPos + "Y-Position" + yPos);
+        Debug.Log("New GameObject created at: " + xPos + " , " + yPos);
+        gameObject.transform.localScale = new Vector3(1, 1, 1);
+        gameObject.transform.position = new Vector3(xPos, yPos);
+        SpriteRenderer newSpriteRenderer = gameObject.AddComponent<SpriteRenderer>();
+        newSpriteRenderer.sprite = selectSprite;
+    }
+
+
+
+
+
+
+
+    private void CreateNewTileWithRotate(Sprite selectSprite, float xPos, float yPos, Vector3 rotationPos)
     {
         GameObject gameObject = new GameObject("X-Position: " + xPos + "Y-Position" + yPos);
         Debug.Log("New GameObject created at: " + xPos + " , " + yPos); 
         gameObject.transform.localScale = new Vector3(1, 1, 1);
         gameObject.transform.position = new Vector3(xPos, yPos);
+        gameObject.transform.Rotate(rotationPos);
+        SpriteRenderer newSpriteRenderer = gameObject.AddComponent<SpriteRenderer>();
+        newSpriteRenderer.sprite = selectSprite;
+    }
 
-        // Check if tile is on a edge position of an array 
-        if (levelMapPos == leftEdgePos)
-        {
-           gameObject.transform.Rotate(new Vector3(0, 0, 90f));
-        }
 
+
+
+
+    private void CreateNewEdgeTile(Sprite selectSprite, float xPos, float yPos)
+    {
+        GameObject gameObject = new GameObject("X-Position: " + xPos + "Y-Position" + yPos);
+        Debug.Log("New GameObject created at: " + xPos + " , " + yPos);
+        gameObject.transform.localScale = new Vector3(1, 1, 1);
+        gameObject.transform.position = new Vector3(xPos, yPos);
         SpriteRenderer newSpriteRenderer = gameObject.AddComponent<SpriteRenderer>();
         newSpriteRenderer.sprite = selectSprite;
     }
@@ -133,5 +184,5 @@ public class ManualLevelGeneratorManager : MonoBehaviour
      */
 
 
-    
+
 }
