@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: be27563f2b1f34ad6b1b2d220fa7c4c7
+guid: b7a7ac20509b64496b2ff256a5f43498
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4092523181245003776
-    second: Inner-Wall-Corner-Sprite_0
+      213: -5667247779893326102
+    second: Junction-Piece-Sprite_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -94,7 +94,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Inner-Wall-Corner-Sprite_0
+      name: Junction-Piece-Sprite_0
       rect:
         serializedVersion: 2
         x: 0
@@ -108,8 +108,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 008f82576209bc830800000000000000
-      internalID: 4092523181245003776
+      spriteID: aee4659ab24e951b0800000000000000
+      internalID: -5667247779893326102
       vertices: []
       indices: 
       edges: []
@@ -117,7 +117,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 501784b0bba3248c69a2c4f6b31035de
+    spriteID: 110588d603a394ffbb506b09c9762581
     internalID: 0
     vertices: []
     indices: 
