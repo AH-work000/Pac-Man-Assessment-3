@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 5fa896c374c0f40d1ab905f01d9d6249
+guid: c435172e6abe845c1bee4c39af73fc71
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -867510053231593875
-    second: Olive-Pizza-Pac-Man-Right-Movement_0
+      213: 9189866668040386443
+    second: Pac-Man-Down-Movement_0
   - first:
-      213: -9139827264906916572
-    second: Olive-Pizza-Pac-Man-Right-Movement_1
+      213: 1260738386406578953
+    second: Pac-Man-Down-Movement_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Olive-Pizza-Pac-Man-Right-Movement_0
+      name: Pac-Man-Down-Movement_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 16
-        width: 116
-        height: 96
+        x: 16
+        y: 4
+        width: 96
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d66fc0ee33cf5f3f0800000000000000
-      internalID: -867510053231593875
+      spriteID: b87ffb96b07f88f70800000000000000
+      internalID: 9189866668040386443
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Olive-Pizza-Pac-Man-Right-Movement_1
+      name: Pac-Man-Down-Movement_1
       rect:
         serializedVersion: 2
-        x: 136
-        y: 16
-        width: 116
-        height: 96
+        x: 144
+        y: 4
+        width: 96
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42d0bc6078fc82180800000000000000
-      internalID: -9139827264906916572
+      spriteID: 90b967cf1ea0f7110800000000000000
+      internalID: 1260738386406578953
       vertices: []
       indices: 
       edges: []
@@ -141,7 +141,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 4a336b60b9dcc4d6396df2cc17245e24
+    spriteID: 51f3d45ad43a6435d8e741733b70a2eb
     internalID: 0
     vertices: []
     indices: 

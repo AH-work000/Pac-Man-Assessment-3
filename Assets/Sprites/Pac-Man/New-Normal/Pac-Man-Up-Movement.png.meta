@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: c435172e6abe845c1bee4c39af73fc71
+guid: 5c96dc0fde05c4b259988794c4db9029
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8736148004648680307
-    second: Olive-Pizza-Pac-Man-Down-Movement_0
+      213: 1222509922978294166
+    second: Pac-Man-Up-Movement_0
   - first:
-      213: 713931413212278916
-    second: Olive-Pizza-Pac-Man-Down-Movement_1
+      213: -2874799102160776571
+    second: Pac-Man-Up-Movement_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -97,11 +97,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Olive-Pizza-Pac-Man-Down-Movement_0
+      name: Pac-Man-Up-Movement_0
       rect:
         serializedVersion: 2
         x: 16
-        y: 4
+        y: 8
         width: 96
         height: 116
       alignment: 0
@@ -111,18 +111,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37b725af2580d3970800000000000000
-      internalID: 8736148004648680307
+      spriteID: 699e28d3c4a37f010800000000000000
+      internalID: 1222509922978294166
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Olive-Pizza-Pac-Man-Down-Movement_1
+      name: Pac-Man-Up-Movement_1
       rect:
         serializedVersion: 2
         x: 144
-        y: 4
+        y: 8
         width: 96
         height: 116
       alignment: 0
@@ -132,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 480b28676d468e900800000000000000
-      internalID: 713931413212278916
+      spriteID: 582581ba279aa18d0800000000000000
+      internalID: -2874799102160776571
       vertices: []
       indices: 
       edges: []
@@ -141,7 +141,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 783648fe0aa4b4256960f20424ec4b2c
+    spriteID: b4cb3178e6dbc4771a2b22137a7d4650
     internalID: 0
     vertices: []
     indices: 
