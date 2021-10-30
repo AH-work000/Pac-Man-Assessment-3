@@ -24,17 +24,16 @@ public class PacManAnimationCycle : MonoBehaviour
 
         if (currentCoroutine == null && isAnimCycleNotEnabled)
         {
-            currentCoroutine = StartCoroutine(animationCycle());
+            currentCoroutine = StartCoroutine(AnimationCycle());
             isAnimCycleNotEnabled = false;
         }
         else
         {
             currentCoroutine = null;
         }
-             
     }
 
-    IEnumerator animationCycle()
+    IEnumerator AnimationCycle()
     {
 
         playerAnimator.SetTrigger("Left");
@@ -54,8 +53,9 @@ public class PacManAnimationCycle : MonoBehaviour
         playerAnimator.ResetTrigger("Death");
         playerAnimator.SetTrigger("endDeath");
 
-        // Set isAnimCucleEnabled to be true at the end of the cycle
+        // Set isAnimCycleEnabled to be true at the end of the cycle
         isAnimCycleNotEnabled = true; 
     }
+
 
 }
