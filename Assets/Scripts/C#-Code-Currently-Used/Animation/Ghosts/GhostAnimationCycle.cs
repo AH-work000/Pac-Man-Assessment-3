@@ -7,6 +7,8 @@ public class GhostAnimationCycle : MonoBehaviour
     // Fields -- Normal
     public Animator ghost1Animator;
     public Animator ghost2Animator;
+    public Animator ghost3Animator;
+    public Animator ghost4Animator;
     bool isAnimCycleNotEnabled;
 
     // Fields -- Coroutine
@@ -39,30 +41,40 @@ public class GhostAnimationCycle : MonoBehaviour
         // Do the Left Movement Cycle First
         StartCoroutine(doLeftMovementCycle(ghost1Animator));
         StartCoroutine(doLeftMovementCycle(ghost2Animator));
+        StartCoroutine(doLeftMovementCycle(ghost3Animator));
+        StartCoroutine(doLeftMovementCycle(ghost4Animator));
 
         yield return new WaitForSeconds(15.0f);
 
         // Then the Right Movement Cycle ...
         StartCoroutine(doRightMovementCycle(ghost1Animator));
         StartCoroutine(doRightMovementCycle(ghost2Animator));
+        StartCoroutine(doRightMovementCycle(ghost3Animator));
+        StartCoroutine(doRightMovementCycle(ghost4Animator));
 
         yield return new WaitForSeconds(15.0f);
 
         // Then the Up Movement Cycle ...
         StartCoroutine(doUpMovementCycle(ghost1Animator));
         StartCoroutine(doUpMovementCycle(ghost2Animator));
+        StartCoroutine(doUpMovementCycle(ghost3Animator));
+        StartCoroutine(doUpMovementCycle(ghost4Animator));
 
         yield return new WaitForSeconds(15.0f);
 
         // And finally the Down Movement Cycle ...
         StartCoroutine(doDownMovementCycle(ghost1Animator));
         StartCoroutine(doDownMovementCycle(ghost2Animator));
+        StartCoroutine(doDownMovementCycle(ghost3Animator));
+        StartCoroutine(doDownMovementCycle(ghost4Animator));
 
         yield return new WaitForSeconds(15.0f);
 
         // The Death Animation Cycle
         StartCoroutine(doDeathAnimCycle(ghost1Animator));
         StartCoroutine(doDeathAnimCycle(ghost2Animator));
+        StartCoroutine(doDeathAnimCycle(ghost3Animator));
+        StartCoroutine(doDeathAnimCycle(ghost4Animator));
 
         yield return new WaitForSeconds(15.0f);
 
