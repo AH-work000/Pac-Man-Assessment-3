@@ -24,7 +24,7 @@ public class PacManAnimationCycle : MonoBehaviour
 
         if (currentCoroutine == null && isAnimCycleNotEnabled)
         {
-            currentCoroutine = StartCoroutine(AnimationCycle());
+            currentCoroutine = StartCoroutine(StartAnimationCycle());
             isAnimCycleNotEnabled = false;
         }
         else
@@ -33,7 +33,7 @@ public class PacManAnimationCycle : MonoBehaviour
         }
     }
 
-    IEnumerator AnimationCycle()
+    IEnumerator StartAnimationCycle()
     {
 
         playerAnimator.SetTrigger("Left");

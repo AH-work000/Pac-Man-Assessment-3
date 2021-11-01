@@ -5,7 +5,8 @@ using UnityEngine;
 public class GhostAnimationCycle : MonoBehaviour
 {
     // Fields -- Normal
-    public Animator ghostAnimator;
+    public Animator ghost1Animator;
+    public Animator ghost2Animator;
     bool isAnimCycleNotEnabled;
 
     // Fields -- Coroutine
@@ -23,7 +24,7 @@ public class GhostAnimationCycle : MonoBehaviour
     {
         if (currentCoroutine == null && isAnimCycleNotEnabled)
         {
-            currentCoroutine = StartCoroutine(AnimationCycle());
+            currentCoroutine = StartCoroutine(StartAnimationCycle());
             isAnimCycleNotEnabled = false;
         }
         else
@@ -33,76 +34,126 @@ public class GhostAnimationCycle : MonoBehaviour
 
     }
 
-    IEnumerator AnimationCycle()
+    IEnumerator StartAnimationCycle()
     {
         // Do the Left Movement Cycle First
-        ghostAnimator.SetTrigger("Left");
-        yield return new WaitForSeconds(1.0f);
-        ghostAnimator.ResetTrigger("Left");
-        ghostAnimator.SetTrigger("ScaredLeft");
-        yield return new WaitForSeconds(0.5f);
-        ghostAnimator.ResetTrigger("ScaredLeft");
-        ghostAnimator.SetTrigger("RecoveringLeft");
-        yield return new WaitForSeconds(1.0f);
-        ghostAnimator.ResetTrigger("RecoveringLeft");
-        ghostAnimator.SetTrigger("Left");
-        yield return new WaitForSeconds(0.5f);
-        ghostAnimator.ResetTrigger("Left");
-        ghostAnimator.SetTrigger("Right");
+        StartCoroutine(doLeftMovementCycle(ghost1Animator));
+        StartCoroutine(doLeftMovementCycle(ghost2Animator));
+
+        yield return new WaitForSeconds(15.0f);
 
         // Then the Right Movement Cycle ...
-        yield return new WaitForSeconds(1.0f);
-        ghostAnimator.ResetTrigger("Right");
-        ghostAnimator.SetTrigger("ScaredRight");
-        yield return new WaitForSeconds(1.0f);
-        ghostAnimator.ResetTrigger("ScaredRight");
-        ghostAnimator.SetTrigger("RecoveringRight");
-        yield return new WaitForSeconds(1.0f);
-        ghostAnimator.ResetTrigger("RecoveringRight");
-        ghostAnimator.SetTrigger("Right");
-        yield return new WaitForSeconds(1.0f);
-        ghostAnimator.ResetTrigger("Right");
-        ghostAnimator.SetTrigger("Up");
+        StartCoroutine(doRightMovementCycle(ghost1Animator));
+        StartCoroutine(doRightMovementCycle(ghost2Animator));
 
+        yield return new WaitForSeconds(15.0f);
 
         // Then the Up Movement Cycle ...
-        yield return new WaitForSeconds(3.0f);
-        ghostAnimator.ResetTrigger("Up");
-        ghostAnimator.SetTrigger("ScaredUp");
-        yield return new WaitForSeconds(3.0f);
-        ghostAnimator.ResetTrigger("ScaredUp");
-        ghostAnimator.SetTrigger("RecoveringUp");
-        yield return new WaitForSeconds(3.0f);
-        ghostAnimator.ResetTrigger("RecoveringUp");
-        ghostAnimator.SetTrigger("Up");
-        yield return new WaitForSeconds(3.0f);
-        ghostAnimator.ResetTrigger("Up");
-        ghostAnimator.SetTrigger("Down");
+        StartCoroutine(doUpMovementCycle(ghost1Animator));
+        StartCoroutine(doUpMovementCycle(ghost2Animator));
 
+        yield return new WaitForSeconds(15.0f);
 
         // And finally the Down Movement Cycle ...
-        yield return new WaitForSeconds(3.0f);
-        ghostAnimator.ResetTrigger("Down");
-        ghostAnimator.SetTrigger("ScaredDown");
-        yield return new WaitForSeconds(3.0f);
-        ghostAnimator.ResetTrigger("ScaredDown");
-        ghostAnimator.SetTrigger("RecoveringDown");
-        yield return new WaitForSeconds(3.0f);
-        ghostAnimator.ResetTrigger("RecoveringDown");
-        ghostAnimator.SetTrigger("Down");
-        yield return new WaitForSeconds(3.0f);
-        ghostAnimator.ResetTrigger("Down");
-        ghostAnimator.SetTrigger("Left");
+        StartCoroutine(doDownMovementCycle(ghost1Animator));
+        StartCoroutine(doDownMovementCycle(ghost2Animator));
+
+        yield return new WaitForSeconds(15.0f);
 
         // The Death Animation Cycle
-        yield return new WaitForSeconds(3.0f);
-        ghostAnimator.ResetTrigger("Left");
-        ghostAnimator.SetTrigger("Death");
-        yield return new WaitForSeconds(3.0f);
-        ghostAnimator.ResetTrigger("Death");
-        ghostAnimator.SetTrigger("endDeath");
+        StartCoroutine(doDeathAnimCycle(ghost1Animator));
+        StartCoroutine(doDeathAnimCycle(ghost2Animator));
+
+        yield return new WaitForSeconds(15.0f);
+
 
         // Set isAnimCycleEnabled to be true at the end of the cycle
         isAnimCycleNotEnabled = true;
         }
+
+    // Supplementary Methods
+
+    IEnumerator doLeftMovementCycle(Animator animator)
+    {
+        // Do the Left Movement Cycle First
+        animator.SetTrigger("Left");
+        yield return new WaitForSeconds(3.0f);
+        animator.ResetTrigger("Left");
+        animator.SetTrigger("ScaredLeft");
+        yield return new WaitForSeconds(3.0f);
+        animator.ResetTrigger("ScaredLeft");
+        animator.SetTrigger("RecoveringLeft");
+        yield return new WaitForSeconds(3.0f);
+        animator.ResetTrigger("RecoveringLeft");
+        animator.SetTrigger("Left");
+        yield return new WaitForSeconds(3.0f);
+        animator.ResetTrigger("Left");
+        animator.SetTrigger("Right");
     }
+
+
+    IEnumerator doRightMovementCycle(Animator animator)
+    {
+        // Then the Right Movement Cycle ...
+        yield return new WaitForSeconds(3.0f);
+        animator.ResetTrigger("Right");
+        animator.SetTrigger("ScaredRight");
+        yield return new WaitForSeconds(3.0f);
+        animator.ResetTrigger("ScaredRight");
+        animator.SetTrigger("RecoveringRight");
+        yield return new WaitForSeconds(3.0f);
+        animator.ResetTrigger("RecoveringRight");
+        animator.SetTrigger("Right");
+        yield return new WaitForSeconds(3.0f);
+        animator.ResetTrigger("Right");
+        animator.SetTrigger("Up");
+    }
+
+
+    IEnumerator doUpMovementCycle(Animator animator)
+    {
+        // Then the Up Movement Cycle ...
+        yield return new WaitForSeconds(3.0f);
+        animator.ResetTrigger("Up");
+        animator.SetTrigger("ScaredUp");
+        yield return new WaitForSeconds(3.0f);
+        animator.ResetTrigger("ScaredUp");
+        animator.SetTrigger("RecoveringUp");
+        yield return new WaitForSeconds(3.0f);
+        animator.ResetTrigger("RecoveringUp");
+        animator.SetTrigger("Up");
+        yield return new WaitForSeconds(3.0f);
+        animator.ResetTrigger("Up");
+        animator.SetTrigger("Down");
+    }
+
+    IEnumerator doDownMovementCycle(Animator animator)
+    {
+        // And finally the Down Movement Cycle ...
+        yield return new WaitForSeconds(3.0f);
+        animator.ResetTrigger("Down");
+        animator.SetTrigger("ScaredDown");
+        yield return new WaitForSeconds(3.0f);
+        animator.ResetTrigger("ScaredDown");
+        animator.SetTrigger("RecoveringDown");
+        yield return new WaitForSeconds(3.0f);
+        animator.ResetTrigger("RecoveringDown");
+        animator.SetTrigger("Down");
+        yield return new WaitForSeconds(3.0f);
+        animator.ResetTrigger("Down");
+        animator.SetTrigger("Left");
+    }
+
+    IEnumerator doDeathAnimCycle(Animator animator)
+    {
+        // The Death Animation Cycle
+        yield return new WaitForSeconds(3.0f);
+        animator.ResetTrigger("Left");
+        animator.SetTrigger("Death");
+        yield return new WaitForSeconds(3.0f);
+        animator.ResetTrigger("Death");
+        animator.SetTrigger("endDeath");
+    }
+
+}
+
