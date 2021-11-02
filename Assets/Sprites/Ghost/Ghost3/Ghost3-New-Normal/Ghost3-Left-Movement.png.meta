@@ -100,12 +100,12 @@ TextureImporter:
       name: Ghost3-Left-Movement_0
       rect:
         serializedVersion: 2
-        x: 24
-        y: 16
-        width: 84
-        height: 96
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -121,12 +121,12 @@ TextureImporter:
       name: Ghost3-Left-Movement_1
       rect:
         serializedVersion: 2
-        x: 152
-        y: 16
-        width: 84
-        height: 96
+        x: 128
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
