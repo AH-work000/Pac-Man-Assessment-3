@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 75a4e630f531f4c269d448cda10e71b1
+guid: f333c3e805e8f43d2ab4087f9ec983ae
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 177975056401597314
-    second: Single-Canberry-Pellet_0
+      213: 5886612118665105235
+    second: Normal-Pellet_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -35,7 +35,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -71,7 +71,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -83,7 +83,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -94,13 +94,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Single-Canberry-Pellet_0
+      name: Normal-Pellet_0
       rect:
         serializedVersion: 2
-        x: 37
-        y: 64
-        width: 48
-        height: 43
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -108,8 +108,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28382bfee5b487200800000000000000
-      internalID: 177975056401597314
+      spriteID: 35f0b87888271b150800000000000000
+      internalID: 5886612118665105235
       vertices: []
       indices: 
       edges: []
@@ -117,7 +117,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 1a70400930f5640d886b73fccf374103
+    spriteID: b99740352dfc940c1979a783b522090a
     internalID: 0
     vertices: []
     indices: 

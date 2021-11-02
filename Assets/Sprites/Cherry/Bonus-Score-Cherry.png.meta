@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 38caea53fae62429caed934f7cf86d5a
+guid: aab4114a15bb14a41a463da08b785835
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8914953023964215599
-    second: Bonus-Golden-Canberry_0
+      213: -3746926419966355388
+    second: Bonus-Score-Cherry_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -94,13 +94,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bonus-Golden-Canberry_0
+      name: Bonus-Score-Cherry_0
       rect:
         serializedVersion: 2
-        x: 37
-        y: 64
-        width: 48
-        height: 43
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -108,8 +108,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f297ea6ba8648bb70800000000000000
-      internalID: 8914953023964215599
+      spriteID: 448116ae54e300cc0800000000000000
+      internalID: -3746926419966355388
       vertices: []
       indices: 
       edges: []
@@ -117,7 +117,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 0c17efd014a45456fa6faf74092fd4e6
+    spriteID: d2e895639a86a4c3fbafd330a691918f
     internalID: 0
     vertices: []
     indices: 
