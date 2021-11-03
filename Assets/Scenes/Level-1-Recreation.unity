@@ -9754,11 +9754,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7333174003552014647, guid: 72391276416ba4f95bcb2b38ca15756e, type: 3}
   m_PrefabInstance: {fileID: 782273378}
   m_PrefabAsset: {fileID: 0}
---- !u!82 &789840932 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 2219313347536060184, guid: a5ff878455e7b4a5791010973381aa3a, type: 3}
-  m_PrefabInstance: {fileID: 2219313346815949628}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &793338970
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10140,7 +10135,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 828846815}
-  - component: {fileID: 828846816}
   m_Layer: 0
   m_Name: AudioPlayer
   m_TagString: Untagged
@@ -10162,22 +10156,6 @@ Transform:
   m_Father: {fileID: 10230981}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &828846816
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 828846814}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef8a6b45ae13f4eea9cb8d62ee9867a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  introBackgroundMusic: {fileID: 8300000, guid: f8b65c1e6e2694680abda57da2530fe9, type: 3}
-  backgroundMusicGhostNormalState: {fileID: 8300000, guid: 9f1993965fd8046bc931723202cb7c2a, type: 3}
-  audioSource: {fileID: 789840932}
-  isPlayed: 0
 --- !u!1001 &832766845
 PrefabInstance:
   m_ObjectHideFlags: 0
