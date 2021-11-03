@@ -8,6 +8,9 @@ TextureImporter:
   - first:
       213: 2866463894534725411
     second: Ghost1-Left-Movement_1
+  - first:
+      213: 6364468897308977536
+    second: Ghost1-Left-Movement_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -100,12 +103,12 @@ TextureImporter:
       name: Ghost1-Left-Movement_0
       rect:
         serializedVersion: 2
-        x: 24
-        y: 16
-        width: 84
-        height: 96
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -121,12 +124,12 @@ TextureImporter:
       name: Ghost1-Left-Movement_1
       rect:
         serializedVersion: 2
-        x: 152
-        y: 16
-        width: 84
-        height: 96
+        x: 128
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -134,6 +137,27 @@ TextureImporter:
       bones: []
       spriteID: 32f993399b9b7c720800000000000000
       internalID: 2866463894534725411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost1-Left-Movement_2
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 0
+        width: 5
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 089af10edb2235850800000000000000
+      internalID: 6364468897308977536
       vertices: []
       indices: 
       edges: []
