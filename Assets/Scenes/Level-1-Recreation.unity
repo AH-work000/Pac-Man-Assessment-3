@@ -20728,7 +20728,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2219313347490652503, guid: a5ff878455e7b4a5791010973381aa3a, type: 3}
       propertyPath: m_Name
-      value: Pac-Man
+      value: PacStudent
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5ff878455e7b4a5791010973381aa3a, type: 3}

@@ -30,17 +30,28 @@ public class Tweener : MonoBehaviour
             selectedTween = currentTweens[i];
 
             // Check if the Vector3 distance is less than 0.1f
-            if (Vector3.Distance(selectedTween.objectTransform.position, selectedTween.endPos) > 0.0f)
+            if (Vector3.Distance(selectedTween.objectTransform.position, selectedTween.endPos) > 1.0f)
             {
+                // Debug.Log("The current distance of startPos to endPos: " + Vector3.Distance(selectedTween.objectTransform.position, selectedTween.endPos));
+
+
                 // Calculate the main lerpMovement of the GameObject
                 float timeFraction = (Time.time - selectedTween.startTime) / selectedTween.duration;
+
+
+                // Debug.Log("The current timeFraction of selectedTween is at: " + timeFraction);
+
                 selectedTween.objectTransform.position = Vector3.Lerp(selectedTween.startPos, selectedTween.endPos, timeFraction);
+
+                // Debug.Log("The current position of selectedTween is at: " + selectedTween.objectTransform.position);
             }
             else
             {
-            // Remove the selectedTween from the currentTweens list
-            currentTweens.RemoveAt(i);
-            }
+                selectedTween.objectTransform.position = selectedTween.endPos;
+
+                // Remove the selectedTween from the currentTweens list
+                currentTweens.RemoveAt(i);
+            } 
         }
 
     }

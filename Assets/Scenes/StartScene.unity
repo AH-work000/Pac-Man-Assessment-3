@@ -1992,7 +1992,7 @@ GameObject:
   - component: {fileID: 1984631286}
   - component: {fileID: 1984631285}
   m_Layer: 5
-  m_Name: PacManImage
+  m_Name: PacStudentImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
