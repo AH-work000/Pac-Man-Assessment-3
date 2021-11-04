@@ -8,12 +8,15 @@ public class PacStudentController : MonoBehaviour
     public GameObject pacStudent;
     public Grid levelOneGrid;
     public Animator pacStudentAnimator;
+    public Tweener tweenerManager;
 
     // Private Member Variables
     char lastInput;
+    char currentInput;
     bool isLerpNotHappening;
-    Vector3Int currentCellPosition;
-    Vector3Int previousCellPosition;
+    Vector3Int cellPosAfterLerp;
+    Vector3Int cellPosBeforeLerp;
+    Coroutine lerpCoroutine;
 
 
     // Start is called before the first frame update
@@ -44,49 +47,51 @@ public class PacStudentController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.D))
             lastInput = 'D';
 
+        // Print out the lastInput
+        Debug.Log("Player Input: " + lastInput);
+
         // Check the last input from the player when the pacStudent have finished lerping
-        if (isLerpNotHappening)
+        if (lerpCoroutine == null && isLerpNotHappening)
         {
-            checkLastInput(lastInput);
-            Debug.Log("The current Cell Position of PacStudent is: " + currentCellPosition);
+            currentInput = lastInput;
+            // Store the currentCellPosition of pacStudent into the previousCellPositon variable
+            cellPosBeforeLerp = levelOneGrid.WorldToCell(pacStudent.transform.position);
+            Debug.Log("The Previous Cell Position of PacStudent is: " + cellPosBeforeLerp);
+
+            lerpCoroutine = StartCoroutine(doLerpMovement(currentInput));
         }
             
     }
 
-    // Method for doing the lerpMovement between each grid
-    private void lerpMovement(Transform pacStudentTransform, Vector3 startPos, Vector3 endPos, float startTime, float duration)
-    {
-        // Main Lerp Movement
-        float timeFraction = (Time.time - startTime) / duration;
-        Debug.Log("The timeFraction is: "+ timeFraction);
-        pacStudentTransform.position = Vector3.Lerp(startPos, endPos, timeFraction);
-
-
-        // Convert the position of pacStudent to its currentCellPosition counterpart
-        currentCellPosition = levelOneGrid.WorldToCell(pacStudentTransform.position);
-
-        // If currentCellPosition does not equal to the previousCellPosition, then lerp ends 
-        if (previousCellPosition == currentCellPosition)
-        {
-            isLerpNotHappening = true;
-        }
-    }
 
     // Check the lastInput of the pacStudent to determine whether the movement is permissible or not
-    private void checkLastInput(char lastInput)
+    IEnumerator doLerpMovement(char currentInput)
     {
-        Vector3 pacStudentPosition = pacStudent.transform.position;
+        // Make the lerpCoroutine to be null 
+        lerpCoroutine = null;
+
 
         // If the lastInput is 'W', then move 1.3f (One grid up) up
-        if (lastInput == 'W')
+        if (currentInput == 'W')
         {
-            // Store the currentCellPosition of pacStudent into the previousCellPositon variable
-            previousCellPosition = levelOneGrid.WorldToCell(pacStudentPosition);
-            Debug.Log("The Previous Cell Position of PacStudent is: " + previousCellPosition);
-            lerpMovement(pacStudent.transform, pacStudentPosition, new Vector3(pacStudentPosition.x, pacStudentPosition.y + 1.3f, pacStudentPosition.z), Time.time, 1.5f);
-            pacStudentAnimator.SetTrigger("Up");
             isLerpNotHappening = false;
-        } 
-    }
 
+            // Change the anim of pacStudent to be up
+            pacStudentAnimator.SetTrigger("Up");
+
+            yield return null;
+
+            // Add tweener for pacStudent
+            tweenerManager.AddTween(pacStudent.transform, pacStudent.transform.position, new Vector3(pacStudent.transform.position.x, pacStudent.transform.position.y + 1.3f), 1.5f);
+
+            // Check the currentCellPosition of pacStudent
+            cellPosAfterLerp = levelOneGrid.WorldToCell(pacStudent.transform.position);
+            Debug.Log("The Current Cell Position of PacStudent is: " + cellPosAfterLerp);
+
+            // Set isLerpNotHappening to true as the movement process has been completed
+            isLerpNotHappening = true;
+        }
+
+
+    } 
 }
