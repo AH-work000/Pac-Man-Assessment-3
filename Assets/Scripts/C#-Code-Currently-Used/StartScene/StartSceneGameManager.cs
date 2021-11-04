@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement; 
 
-public class GameManager : MonoBehaviour
+public class StartSceneGameManager : MonoBehaviour
 {
     // Member Variables
 
@@ -49,10 +49,14 @@ public class GameManager : MonoBehaviour
 
     public void loadFirstLevel()
     {
-        Debug.Log("Level 1 Button is Click!");
-        Destroy(startScreenAudioManager);
-        Destroy(animationManagerGameObject);
-        SceneManager.LoadSceneAsync(1);
+        Destroy(audioManagerGameObject);
+        SceneManager.LoadScene(1);
+    }
+
+    public void loadStartScreen()
+    {
+        Debug.Log("Exit Button is clicked!");
+        SceneManager.LoadScene(0);
     }
 
 }
