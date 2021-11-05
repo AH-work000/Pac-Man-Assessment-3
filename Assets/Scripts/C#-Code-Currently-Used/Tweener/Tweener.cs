@@ -2,88 +2,61 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class Tweener : MonoBehaviour
 {
-    // Private Member Variable: List of currentTweens
-    private List<Tween> currentTweens;
+    //private Tween activeTween;
+    private List<Tween> activeTweens;
 
-
-    // Start is called before the first frame update
     void Start()
     {
-        // Initialize the currentTweeens list
-        currentTweens = new List<Tween>();
-        
+        activeTweens = new List<Tween>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        // Declare a new variable called selectedTween
-        Tween selectedTween;
-
-
-        // Loop through the currentTweens list
-        for (int i = currentTweens.Count-1; i >= 0; i--)
+        //if (activeTween != null)
+        Tween activeTween;
+        for (int i = activeTweens.Count - 1; i >= 0; i--) //Tween activeTween in activeTweens.Reverse<Tween>())
         {
-            // Designate the element of the tween that the loop is at as the selectedTween
-            selectedTween = currentTweens[i];
+            activeTween = activeTweens[i];
 
-            // Check if the Vector3 distance is less than 0.1f
-            if (Vector3.Distance(selectedTween.objectTransform.position, selectedTween.endPos) > 1.0f)
+            if (Vector3.Distance(activeTween.Target.position, activeTween.EndPos) > 0.1f)
             {
-                // Debug.Log("The current distance of startPos to endPos: " + Vector3.Distance(selectedTween.objectTransform.position, selectedTween.endPos));
-
-
-                // Calculate the main lerpMovement of the GameObject
-                float timeFraction = (Time.time - selectedTween.startTime) / selectedTween.duration;
-
-
-                // Debug.Log("The current timeFraction of selectedTween is at: " + timeFraction);
-
-                selectedTween.objectTransform.position = Vector3.Lerp(selectedTween.startPos, selectedTween.endPos, timeFraction);
-
-                // Debug.Log("The current position of selectedTween is at: " + selectedTween.objectTransform.position);
+                float timeFraction = (Time.time - activeTween.StartTime) / activeTween.Duration;
+                //timeFraction = Mathf.Pow(timeFraction, 3);
+                activeTween.Target.position = Vector3.Lerp(activeTween.StartPos,
+                                                          activeTween.EndPos,
+                                                           timeFraction);
             }
             else
             {
-                selectedTween.objectTransform.position = selectedTween.endPos;
-
-                // Remove the selectedTween from the currentTweens list
-                currentTweens.RemoveAt(i);
-            } 
+                activeTween.Target.position = activeTween.EndPos;
+                //activeTween = null;
+                activeTweens.RemoveAt(i);
+            }
         }
-
     }
 
-
-    // Public Method for adding a new Tween
-    public bool AddTween(Transform objectTransform, Vector3 startPos, Vector3 endPos, float duration)
+    public bool AddTween(Transform targetObject, Vector3 startPos, Vector3 endPos, float duration)
     {
-        // Check if the same tween already exists in the list
-        if (!TweenExists(objectTransform))
+        if (!TweenExists(targetObject))
         {
-            // If the tween to be added doesn't match, then add that tween into the list
-            currentTweens.Add(new Tween(objectTransform, startPos, endPos, Time.time, duration));
+            activeTweens.Add(new Tween(targetObject, startPos, endPos, Time.time, duration));
             return true;
         }
-
-        // Otherwise, return false when there's a match found
         return false;
     }
 
 
-    // TweenExists Method to check if there's already tween in the currentTweens list
-    // Utilise the match pattern (function)
-    public bool TweenExists(Transform targetTransform)
+    public bool TweenExists(Transform target)
     {
-        foreach (Tween selectedTween in currentTweens)
+        foreach (Tween activeTween in activeTweens)
         {
-            if (selectedTween.objectTransform.transform == targetTransform)
+            if (activeTween.Target.transform == target)
                 return true;
         }
-
-        // Otherwise return false when there's not match found
         return false;
     }
 }
