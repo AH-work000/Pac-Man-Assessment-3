@@ -146,4 +146,21 @@ public class MapManager : MonoBehaviour
         return tilesRefArray[refNumber];
     }
 
+
+    // Check if the tileRef has a Pellet
+    public bool doTileRefHavePellet()
+    {
+        int refNumber = levelMap[currentRowRef, currentColRef];
+        string tileRefName = tilesRefArray[refNumber];
+
+        Debug.Log("Tile Reference Name: " + tileRefName);
+
+        if (tileRefName == "Standard-pellet" || tileRefName == "Power-pellet")
+        {
+            return true;
+        }
+
+    return false;
+    }
+
 }

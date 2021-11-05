@@ -558,9 +558,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pacStudent: {fileID: 1363033437}
-  levelOneGrid: {fileID: 107090910}
   pacStudentAnimator: {fileID: 1363033439}
-  mapManager: {fileID: 276925281}
 --- !u!1001 &96480871
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15081,6 +15079,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 107680649209796319, guid: 1bec59c5f23b643bea3d9443fbea09a9, type: 3}
   m_PrefabInstance: {fileID: 107680647852288898}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &1363033438 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 107680649209796316, guid: 1bec59c5f23b643bea3d9443fbea09a9, type: 3}
+  m_PrefabInstance: {fileID: 107680647852288898}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &1363033439 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 107680649209796317, guid: 1bec59c5f23b643bea3d9443fbea09a9, type: 3}
@@ -20566,6 +20569,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2140938191}
+  - component: {fileID: 2140938192}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -20587,6 +20591,21 @@ Transform:
   m_Father: {fileID: 1823738307}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2140938192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140938190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71298b9568a1c4051a71e5161bbc7035, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pacManMovementSound: {fileID: 8300000, guid: bc91e933fd3794b36bd7543300bdaed7, type: 3}
+  pacManEatPelletSound: {fileID: 8300000, guid: 1cec1d8c131b44ccc93b4569374b7231, type: 3}
+  pacManAudioSource: {fileID: 1363033438}
 --- !u!1001 &2143764792
 PrefabInstance:
   m_ObjectHideFlags: 0

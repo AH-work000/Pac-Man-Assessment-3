@@ -4,15 +4,33 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    // Public Member Variables
+    public AudioClip pacManMovementSound;
+    public AudioClip pacManEatPelletSound;
+    public AudioSource pacManAudioSource;
+
+
+    // Function to play the pacManMovementSound when it is called
+    public void playMovementSound()
     {
-        
+        pacManAudioSource.clip = pacManMovementSound;
+        pacManAudioSource.volume = 1.25f;
+        pacManAudioSource.Play();
     }
 
-    // Update is called once per frame
-    void Update()
+
+    // Function to play the pacManEatPelletSound when it is called
+    public void playEatPelletSound()
     {
-        
+        pacManAudioSource.clip = null;
+        pacManAudioSource.clip = pacManEatPelletSound;
+        pacManAudioSource.volume = 1.25f;
+        pacManAudioSource.Play();
     }
+
+
+
+
+
+
 }

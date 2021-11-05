@@ -22,4 +22,19 @@ public class Level1GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+
+    // Function to return the mapManager
+    public MapManager getMapManager()
+    {
+        MapManager mapManager = gameObject.GetComponentInChildren<MapManager>();
+        return mapManager;
+    }
+
+
+    // Function to return the audioManager
+    public AudioManager getAudioManager()
+    {
+        AudioManager audioManager = gameObject.GetComponentInChildren<AudioManager>();
+        return audioManager;
+    }
 }

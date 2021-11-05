@@ -7,11 +7,12 @@ public class PacStudentController : MonoBehaviour
     // Public Member Variables
     public GameObject pacStudent;
     public Animator pacStudentAnimator;
-    public MapManager mapManager;
 
     // Private Member Variables Bools
-    char lastInput;
-    char currentInput;
+    private char lastInput;
+    private char currentInput;
+    private MapManager mapManager;
+    private AudioManager audioManager;
 
 
     // Private Member Variables for Lerping
@@ -21,6 +22,20 @@ public class PacStudentController : MonoBehaviour
 
     // Private member Variables for Controlling Anims
     string currentAnim;
+
+    // Called before start()
+    void Awake()
+    {
+        // Get the level1GameManager
+        Level1GameManager level1GameManager = gameObject.GetComponentInParent<Level1GameManager>();
+
+        // Get the mapManager and initialize it
+        mapManager = level1GameManager.getMapManager();
+
+        // Get the audioManager and initialize it
+        audioManager = level1GameManager.getAudioManager();
+    }
+
 
 
     // Start is called before the first frame update
@@ -37,6 +52,7 @@ public class PacStudentController : MonoBehaviour
         mapManager.currentRowRef = 11;
         mapManager.currentColRef = 10;
     }
+
 
     // Update is called once per frame
     void Update()
@@ -69,6 +85,22 @@ public class PacStudentController : MonoBehaviour
             {
                 currentInput = lastInput;
                 decideLerpDirectionCoroutine = StartCoroutine(decideLerpDirection(currentInput));
+
+                    // Check if the current tileRef that the pacStudent is on right now is a pellet
+                    if (mapManager.doTileRefHavePellet())
+                    {
+                        Debug.Log("Playing the Eat Pellet Sound");
+
+                        // Play the eat pellet sound
+                        audioManager.playEatPelletSound();
+                    }    
+                    else
+                    {
+                        // Play the Pac-Man Movement Sound
+                        audioManager.playMovementSound();
+
+                    }
+
                 decideLerpDirectionCoroutine = null;
             }
             else
@@ -78,6 +110,22 @@ public class PacStudentController : MonoBehaviour
                 {
                     // Then use the currentInput pos to lerp
                     decideLerpDirectionCoroutine = StartCoroutine(decideLerpDirection(currentInput));
+
+                    // Check if the current tileRef that the pacStudent is on right now is a pellet
+                    if (mapManager.doTileRefHavePellet())
+                    {
+                        Debug.Log("Playing the Eat Pellet Sound");
+
+                        // Play the eat pellet sound
+                        audioManager.playEatPelletSound();
+                    }
+                    else
+                    {
+                        // Play the Pac-Man Movement Sound
+                        audioManager.playMovementSound();
+
+                    }
+
                     decideLerpDirectionCoroutine = null;
                 }
                 else
@@ -196,7 +244,9 @@ public class PacStudentController : MonoBehaviour
             eplasedTime += Time.deltaTime;
             yield return null;
         }
+
         pacStudent.transform.position = endPos;
+
     }
 
 
