@@ -6,8 +6,8 @@ public class PacStudentController : MonoBehaviour
 {
     // Public Member Variables
     public GameObject pacStudent;
-    public Grid levelOneGrid;
     public Animator pacStudentAnimator;
+    public MapManager mapManager;
 
     // Private Member Variables Bools
     char lastInput;
@@ -32,6 +32,10 @@ public class PacStudentController : MonoBehaviour
 
         // Initialize the currentAnim variable to be "Left"
         currentAnim = "Left";
+
+        // Set the currentRow and the currentCol to the default position that the pacStudent is in the Map Array
+        mapManager.currentRowRef = 11;
+        mapManager.currentColRef = 10;
     }
 
     // Update is called once per frame
@@ -59,10 +63,31 @@ public class PacStudentController : MonoBehaviour
         // Check the last input from the player when the pacStudent have finished lerping
         if (isLerpOff && decideLerpDirectionCoroutine == null)
         {
-            currentInput = lastInput;
-            decideLerpDirectionCoroutine = StartCoroutine(decideLerpDirection(currentInput));
-            decideLerpDirectionCoroutine = null;
+
+            // Check if the adjacent Grid Position from the player's lastInput is walkable
+            if (mapManager.checkAdjacentGrid(lastInput))
+            {
+                currentInput = lastInput;
+                decideLerpDirectionCoroutine = StartCoroutine(decideLerpDirection(currentInput));
+                decideLerpDirectionCoroutine = null;
+            }
+            else
+            {
+                // Check if the adjacent Grid Position from the player's currentInput is walkable
+                if (mapManager.checkAdjacentGrid(currentInput))
+                {
+                    // Then use the currentInput pos to lerp
+                    decideLerpDirectionCoroutine = StartCoroutine(decideLerpDirection(currentInput));
+                    decideLerpDirectionCoroutine = null;
+                }
+                else
+                {
+                    pacStudentAnimator.ResetTrigger(currentAnim);
+                }
+            }
+
         }
+               
     }
 
     IEnumerator decideLerpDirection(char currentInput)
@@ -80,6 +105,9 @@ public class PacStudentController : MonoBehaviour
 
             yield return new WaitForSeconds(0.4f);
 
+            // Set the currentRowRef of pacStudent in the map array
+            mapManager.currentRowRef -= 1;
+
             isLerpOff = true;
         }
 
@@ -95,6 +123,10 @@ public class PacStudentController : MonoBehaviour
             pacStudent.transform.position.z), 0.4f));
 
             yield return new WaitForSeconds(0.4f);
+
+
+            // Set the currentColRef of pacStudent in the map array
+            mapManager.currentColRef -= 1;
 
             isLerpOff = true;
         }
@@ -114,6 +146,9 @@ public class PacStudentController : MonoBehaviour
 
             yield return new WaitForSeconds(0.4f);
 
+            // Set the currentRowRef of pacStudent in the map array
+            mapManager.currentRowRef += 1;
+
             isLerpOff = true;
         }
 
@@ -131,6 +166,9 @@ public class PacStudentController : MonoBehaviour
             pacStudent.transform.position.z), 0.4f));
 
             yield return new WaitForSeconds(0.4f);
+
+            // Set the currentColRef of pacStudent in the map array
+            mapManager.currentColRef += 1;
 
             isLerpOff = true;
         }

@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class mapManager : MonoBehaviour
+public class MapManager : MonoBehaviour
 {
     // pacStudentArrayRefPos Private Member Variable
-    public int CurrentRow { get; set; }
-    public int CurrentCol { get; set; }
+    public int currentRowRef { get; set; }
+    public int currentColRef { get; set; }
 
     // Declare a new string private member variable called tilesRef
     string tilesRef;
@@ -75,7 +75,7 @@ public class mapManager : MonoBehaviour
 
 
     // Function to check if the adjacent grid is walkable
-    public bool checkAdjacentGrid(char lastInputKey, int currentRowRef, int currentColRef)
+    public bool checkAdjacentGrid(char lastInputKey)
     {
 
         // When the lastInputKey equals 'W' key (Up) or the Up Arrow Key 
