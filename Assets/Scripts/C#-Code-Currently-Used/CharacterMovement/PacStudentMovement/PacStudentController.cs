@@ -89,7 +89,6 @@ public class PacStudentController : MonoBehaviour
                     // Check if the current tileRef that the pacStudent is on right now is a pellet
                     if (mapManager.doTileRefHavePellet())
                     {
-                        Debug.Log("Playing the Eat Pellet Sound");
 
                         // Play the eat pellet sound
                         audioManager.playEatPelletSound();
@@ -114,7 +113,6 @@ public class PacStudentController : MonoBehaviour
                     // Check if the current tileRef that the pacStudent is on right now is a pellet
                     if (mapManager.doTileRefHavePellet())
                     {
-                        Debug.Log("Playing the Eat Pellet Sound");
 
                         // Play the eat pellet sound
                         audioManager.playEatPelletSound();

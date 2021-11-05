@@ -153,8 +153,6 @@ public class MapManager : MonoBehaviour
         int refNumber = levelMap[currentRowRef, currentColRef];
         string tileRefName = tilesRefArray[refNumber];
 
-        Debug.Log("Tile Reference Name: " + tileRefName);
-
         if (tileRefName == "Standard-pellet" || tileRefName == "Power-pellet")
         {
             return true;
